@@ -1,6 +1,6 @@
 # 🚀 TanStack Start + AWS Amplify Gen 2 Template
 
-[![CI](https://github.com/your-username/tanstack-start-amplify-template/workflows/CI/badge.svg)](https://github.com/your-username/tanstack-start-amplify-template/actions)
+[![CI](https://github.com/jayarerita/tanstack-start-amplify-template/workflows/CI/badge.svg)](https://github.com/jayarerita/tanstack-start-amplify-template/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![AWS Amplify](https://img.shields.io/badge/AWS%20Amplify-FF9900?logo=aws-amplify&logoColor=white)](https://aws.amazon.com/amplify/)
@@ -17,18 +17,13 @@ A modern, production-ready template for building full-stack React applications w
 - **Session management** with JWT tokens
 
 ### 🗄️ Backend
-- **AWS AppSync** GraphQL API
-- **DynamoDB** database with user authorization
-- **Real-time subscriptions** for live data
-- **Offline support** with automatic sync
-- **Type-safe** backend operations
+- **AWS Amplify Gen 2** GraphQL API & Cognito Auth
 
 ### 🎨 Frontend
 - **TanStack Start** for full-stack React
 - **TanStack Router** for type-safe routing
 - **TypeScript** throughout the entire stack
 - **Tailwind CSS** for styling
-- **Responsive design** with dark/light mode
 
 ## 🚀 Quick Start
 
@@ -37,7 +32,7 @@ A modern, production-ready template for building full-stack React applications w
 Click the **"Use this template"** button above or:
 
 ```bash
-gh repo create my-awesome-app --template your-username/tanstack-start-amplify-template
+gh repo create my-awesome-app --template jayarerita/tanstack-start-amplify-template
 cd my-awesome-app
 ```
 
@@ -164,6 +159,7 @@ Deploy to any static hosting service:
 ## 📚 Documentation
 
 - [📖 Detailed Setup Guide](./AMPLIFY_SETUP.md)
+- [🔐 Authentication Guide](./AUTHENTICATION.md)
 - [🤝 Contributing Guidelines](./CONTRIBUTING.md)
 - [🔒 Security Policy](./SECURITY.md)
 - [📝 Template Documentation](./TEMPLATE.md)
@@ -186,9 +182,9 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 ## 🆘 Support
 
 - 📖 Check the [setup guide](./AMPLIFY_SETUP.md)
-- 🐛 [Report bugs](https://github.com/your-username/tanstack-start-amplify-template/issues)
-- 💡 [Request features](https://github.com/your-username/tanstack-start-amplify-template/issues)
-- 💬 [Start a discussion](https://github.com/your-username/tanstack-start-amplify-template/discussions)
+- 🐛 [Report bugs](https://github.com/jayarerita/tanstack-start-amplify-template/issues)
+- 💡 [Request features](https://github.com/jayarerita/tanstack-start-amplify-template/issues)
+- 💬 [Start a discussion](https://github.com/jayarerita/tanstack-start-amplify-template/discussions)
 
 ## ⭐ Show Your Support
 

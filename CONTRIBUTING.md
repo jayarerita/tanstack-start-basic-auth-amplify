@@ -11,7 +11,7 @@ This template aims to provide a production-ready starting point for modern full-
 1. **Fork the repository**
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/your-username/tanstack-start-amplify-template.git
+   git clone https://github.com/jayarerita/tanstack-start-amplify-template.git
    cd tanstack-start-amplify-template
    ```
 3. **Install dependencies**

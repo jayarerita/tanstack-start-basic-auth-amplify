@@ -43,7 +43,7 @@ This is a template repository for creating modern full-stack React applications 
 ### 1. Create from Template
 Click "Use this template" on GitHub or:
 ```bash
-gh repo create my-app --template your-username/tanstack-start-amplify-template
+gh repo create my-app --template jayarerita/tanstack-start-basic-auth-amplify
 cd my-app
 ```
 

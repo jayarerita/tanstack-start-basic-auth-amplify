@@ -21,12 +21,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/tanstack-start-amplify-template.git"
+    "url": "https://github.com/jayarerita/tanstack-start-basic-auth-amplify.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/tanstack-start-amplify-template/issues"
+    "url": "https://github.com/jayarerita/tanstack-start-basic-auth-amplify/issues"
   },
-  "homepage": "https://github.com/your-username/tanstack-start-amplify-template#readme",
+  "homepage": "https://github.com/jayarerita/tanstack-start-basic-auth-amplify#readme",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",

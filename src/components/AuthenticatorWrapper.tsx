@@ -1,4 +1,4 @@
-import { Authenticator, ThemeProvider } from '@aws-amplify/ui-react';
+import { Authenticator, ThemeProvider, useAuthenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import { amplifyTheme } from '~/lib/amplify-ui-theme';
 import { useRouter } from '@tanstack/react-router';
@@ -8,9 +8,22 @@ interface AuthenticatorWrapperProps {
   children: React.ReactNode;
 }
 
-export function AuthenticatorWrapper({ children }: AuthenticatorWrapperProps) {
+// Separate component to handle the redirect logic
+function AuthenticatedContent({ children }: { children: React.ReactNode }) {
+  const { user } = useAuthenticator();
   const router = useRouter();
 
+  // Auto-redirect to posts page after successful authentication
+  useEffect(() => {
+    if (user) {
+      router.navigate({ to: '/posts' });
+    }
+  }, [user, router]);
+
+  return <>{children}</>;
+}
+
+export function AuthenticatorWrapper({ children }: AuthenticatorWrapperProps) {
   return (
     <ThemeProvider theme={amplifyTheme}>
       <Authenticator
@@ -81,16 +94,7 @@ export function AuthenticatorWrapper({ children }: AuthenticatorWrapperProps) {
           },
         }}
       >
-        {({ signOut, user }) => {
-          // Auto-redirect to home page after successful authentication
-          useEffect(() => {
-            if (user) {
-              router.navigate({ to: '/' });
-            }
-          }, [user, router]);
-
-          return <>{children}</>;
-        }}
+        <AuthenticatedContent>{children}</AuthenticatedContent>
       </Authenticator>
     </ThemeProvider>
   );
